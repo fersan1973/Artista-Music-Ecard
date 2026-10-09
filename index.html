@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fernando Sánchez Flores - Artista Music</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    body {
+      background-color: #0b0b0b;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 16px;
+    }
+    .card {
+      width: 100%;
+      max-width: 410px;
+      background: radial-gradient(circle at 50% 20%, #1c1c1c 0%, #0d0d0d 100%);
+      border: 2px solid #c59b4e;
+      border-radius: 28px;
+      padding: 36px 24px 28px;
+      text-align: center;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.85), inset 0 0 15px rgba(197, 155, 78, 0.15);
+      position: relative;
+    }
+    .logo-text {
+      color: #dfba6d;
+      font-size: 1.8rem;
+      font-weight: 900;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      text-shadow: 0 0 15px rgba(223, 186, 109, 0.5);
+    }
+    .logo-sub {
+      color: #c59b4e;
+      font-size: 0.65rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-top: 4px;
+      margin-bottom: 20px;
+    }
+    .name {
+      color: #ffffff;
+      font-size: 1.35rem;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    .subtitle {
+      color: #dfba6d;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+    .qr-box {
+      background: #000;
+      border: 2px solid #dfba6d;
+      border-radius: 18px;
+      padding: 14px;
+      display: inline-block;
+      margin-bottom: 28px;
+    }
+    .qr-label {
+      color: #dfba6d;
+      font-size: 0.65rem;
+      letter-spacing: 2px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+    .qr-img {
+      width: 160px;
+      height: 160px;
+      display: block;
+      border-radius: 6px;
+    }
+    .info-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      text-align: left;
+      margin-bottom: 28px;
+      padding: 0 6px;
+    }
+    .info-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+    }
+    .icon-circle {
+      width: 44px;
+      height: 44px;
+      border: 1.5px solid #dfba6d;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #dfba6d;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+    .info-text .label {
+      color: #8c8c8c;
+      font-size: 0.65rem;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+    .info-text .val {
+      color: #ffffff;
+      font-size: 0.95rem;
+      font-weight: 600;
+      word-break: break-all;
+    }
+    .btn-group {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .btn {
+      flex: 1;
+      padding: 13px 0;
+      border-radius: 10px;
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      text-align: center;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #dfba6d 0%, #a67c2e 100%);
+      color: #0b0b0b;
+      box-shadow: 0 4px 12px rgba(166, 124, 46, 0.35);
+    }
+    .btn-secondary {
+      background: transparent;
+      border: 1.5px solid #dfba6d;
+      color: #dfba6d;
+    }
+    .btn:active {
+      transform: scale(0.97);
+    }
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding-top: 10px;
+      border-top: 1px solid rgba(223, 186, 109, 0.2);
+    }
+    .social-links a {
+      color: #dfba6d;
+      text-decoration: none;
+      font-size: 1.1rem;
+      opacity: 0.85;
+      transition: opacity 0.2s;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="logo-text">ARTISTA MUSIC</div>
+    <div class="logo-sub">• EST. MMXXVI • WORLDWIDE •</div>
+
+    <h1 class="name">Fernando Sánchez Flores</h1>
+    <p class="subtitle">A&R • Artist Management • Radio Promotion • Distribution</p>
+
+    <div class="qr-box">
+      <div class="qr-label">Scan to Save Contact</div>
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=BEGIN%3AVCARD%0AVERSION%3A3.0%0AN%3AS%C3%A1nchez+Flores%3BFernando%0AFN%3AFernando+S%C3%A1nchez+Flores%0AORG%3AArtista+Music%0ATEL%3A2103850515%0AEMAIL%3Afersan17%40gmail.com%0AADR%3A%3B%3B3106+West+Ave%2C+San+Antonio%2C+TX+78213%0AEND%3AVCARD&color=dfba6d&bgcolor=000000" alt="QR Contacto" class="qr-img">
+    </div>
+
+    <div class="info-list">
+      <a href="tel:2103850515" class="info-item">
+        <div class="icon-circle">📞</div>
+        <div class="info-text">
+          <div class="label">Direct Line</div>
+          <div class="val">(210) 385-0515</div>
+        </div>
+      </a>
+
+      <a href="mailto:fersan17@gmail.com" class="info-item">
+        <div class="icon-circle">✉️</div>
+        <div class="info-text">
+          <div class="label">Executive Email</div>
+          <div class="val">fersan17@gmail.com</div>
+        </div>
+      </a>
+
+      <a href="https://maps.google.com/?q=3106+West+Ave,+San+Antonio,+TX+78213" target="_blank" class="info-item">
+        <div class="icon-circle">📍</div>
+        <div class="info-text">
+          <div class="label">Location</div>
+          <div class="val">3106 West Ave., San Antonio, TX 78213</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="btn-group">
+      <a href="tel:2103850515" class="btn btn-primary">Call Direct</a>
+      <a href="mailto:fersan17@gmail.com" class="btn btn-secondary">Send Email</a>
+    </div>
+
+    <div class="social-links">
+      <a href="https://www.instagram.com" target="_blank" title="Instagram">📸</a>
+      <a href="https://open.spotify.com" target="_blank" title="Spotify">🎵</a>
+      <a href="https://maps.google.com/?q=3106+West+Ave,+San+Antonio,+TX+78213" target="_blank" title="Location">🌐</a>
+    </div>
+  </div>
+
+</body>
+</html>
